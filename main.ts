@@ -15,3 +15,4 @@ if (png.length > 1048576) {
 }
 mkdirSync(out, { recursive: true });
 writeFileSync(join(out, 'entry.png'), png);
+console.log(`wrote entry.png, ${png.length} bytes`);
